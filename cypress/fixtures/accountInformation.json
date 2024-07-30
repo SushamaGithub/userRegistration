@@ -1,0 +1,21 @@
+{
+    
+    "accountInformation":[
+        {
+            "firstName": "John",
+            "lastName": "Rick",
+            "telephoneNumber": 9199191923
+        },
+        {
+            "firstName": "Peter",
+            "lastName": "Cook",
+            "telephoneNumber": 99029191923
+        },
+        {
+            "firstName": "Sushama",
+            "lastName": "Smith",
+            "telephoneNumber": 9890292092
+        }
+    ]
+    
+}
