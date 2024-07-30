@@ -4,6 +4,7 @@
 // the built-in JavaScript bundler
 const requiredExample = require('../../fixtures/example')
 
+//hi
 context('Files', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/commands/files')
