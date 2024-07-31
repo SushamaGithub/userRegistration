@@ -85,9 +85,12 @@ class LoginPage {
       cy.get(this.telephoneNumber).clear().type(userRegInfo.telephoneNumber);
       cy.get(this.password).clear().type(userRegInfo.password);
       cy.get(this.confirmpwd).clear().type(userRegInfo.confirmpwd);
-      /*cy.get('[value="Continue"]').click()
-      cy.contains('Success:').should('be.visible')
-      cy.get('.list-group-item').eq(1).click() */
+      cy.get ('[for="input-agree"]').click()
+      cy.get('[value="Continue"]').click()
+      //cy.contains('Success').should('be.visible')
+      cy.get(this.logout).eq(1).click();
+
+
     } 
   }
   

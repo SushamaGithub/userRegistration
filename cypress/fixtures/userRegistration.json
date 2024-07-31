@@ -1,0 +1,22 @@
+{
+    
+    "userRegistration":[
+        {
+            "firstName": "John",
+            "lastName": "Rick",
+            "emailaddress": "jrick@qa11.com",
+            "telephoneNumber": 9199191923,
+            "password": "testing123",
+            "confirmpwd":"testing123"
+        },
+        {
+            "firstName": "Peter",
+            "lastName": "Cook",
+            "emailaddress": "pcook@qa.com",
+            "telephoneNumber": 99029191923,
+            "password": "testing456",
+            "confirmpwd":"testing456"
+        }
+    ]
+    
+}
