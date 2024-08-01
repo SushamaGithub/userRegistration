@@ -87,6 +87,7 @@ class LoginPage {
       cy.get(this.confirmpwd).clear().type(userRegInfo.confirmpwd);
       cy.get ('[for="input-agree"]').click()
       cy.get('[value="Continue"]').click()
+      cy.wait(4000)
       //cy.contains('Success').should('be.visible')
       cy.get(this.logout).eq(1).click();
 

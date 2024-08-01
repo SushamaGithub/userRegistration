@@ -1,13 +1,10 @@
 {
     
     "errorMessages":[
-        {
-            "firstNameValidation": "First Name must be between 1 and 32 characters!",
-            "lastNameValidation": "Last Name must be between 1 and 32 characters!",
-            "emailaddressValidation": "E-Mail Address does not appear to be valid!",
-            "telephoneNumberValidation": "Telephone must be between 3 and 32 characters!",
-            "password": "Password must be between 4 and 20 characters!"
-        }
+        
+            "First Name must be between 1 and 32 characters!","Last Name must be between 1 and 32 characters!", "E-Mail Address does not appear to be valid!"
+            ,"Telephone must be between 3 and 32 characters!","Password must be between 4 and 20 characters!"
+        
         
     ]
     
