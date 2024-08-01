@@ -90,8 +90,9 @@ class LoginPage {
       //cy.contains('Success').should('be.visible')
       cy.get(this.logout).eq(1).click();
 
-
     } 
+
+    
   }
   
   module.exports = LoginPage;

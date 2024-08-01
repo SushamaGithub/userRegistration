@@ -3,6 +3,8 @@
 import LoginPage from "../Page/loginPage.cy.js";
 import accountInfo from "../../fixtures/accountInformation.json";
 import userRegInfo from "../../fixtures/userregistration.json" ;
+import errMessageValidation from "../../fixtures/errorMessages.json" ;
+
 
 
 describe('Login Test', () => {
@@ -85,9 +87,16 @@ describe('Login Test', () => {
       it.only('Enter empty values in registration', () => {
         cy.get(".list-group-item").eq(1).click();
         cy.get('[value="Continue"]').click()
-        cy.get('.text-danger[1]').should('have.text', 'First Name must be between 1 and 32 characters!');
+        for (let i = 0; i < errMessageValidation.errorMessages.length; i++) {
+            //loginpage.errorValidation(errMessageValidation.errorMessages[i]);
+            //cy.log('sushama', errMessageValidation.errorMessages[i]);
+           // cy.get('.text-danger').eq(i).should('have.text', errMessageValidation.errorMessages[i]);
+            
+            cy.get('.text-danger').eq(i).should('have.text', "First Name must be between 1 and 32 characters!" );
+        }
+          })
 
-    })
+    
 });
 
 function getEmailAddress(domain)
