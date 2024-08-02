@@ -4,7 +4,7 @@
         {
             "firstName": "John",
             "lastName": "Rick",
-            "emailaddress": "jrick@qa12212.com",
+            "emailaddress": "jrick1@qa12212.com",
             "telephoneNumber": 3333332222,
             "password": "testing123",
             "confirmpwd":"testing123"
@@ -12,7 +12,7 @@
         {
             "firstName": "Peter",
             "lastName": "Cook",
-            "emailaddress": "pcook@q2a1223.com",
+            "emailaddress": "pcook1@q2a1223.com",
             "telephoneNumber": 99029191923,
             "password": "testing456",
             "confirmpwd":"testing456"

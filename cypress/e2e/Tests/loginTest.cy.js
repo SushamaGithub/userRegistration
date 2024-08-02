@@ -83,7 +83,7 @@ describe("Login Test", () => {
     }
   });
 
-  it.only("Register the user ", () => {
+  it("Register the user ", () => {
     for (let i = 0; i < userRegInfo.userRegistration.length; i++) {
       cy.get(".list-group-item").eq(1).click(); //click register
       loginpage.fillUserRegistration(userRegInfo.userRegistration[i]);
@@ -93,8 +93,9 @@ describe("Login Test", () => {
   it("Enter empty values in registration", () => {
     cy.get(".list-group-item").eq(1).click();
     cy.get('[value="Continue"]').click();
+    
     for (let i = 0; i < errMessageValidation.errorMessages.length; i++) {
-      cy.get(".text-danger").eq(i).should("have.text", errMessageValidation.errorMessages[i]);
+       cy.get(".text-danger").eq(i).should("have.text", errMessageValidation.errorMessages[i]);
     }
   });
 });
